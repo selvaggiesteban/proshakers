@@ -1,0 +1,171 @@
+/*! Place your custom styles here */
+
+.bar .logo {
+  max-height: 5.85714286em;
+  max-width: none;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+  margin-bottom: 1em;
+}
+
+@media all and (max-width: 767px) {
+  .bar .logo {
+    max-height: 3.85714286em;
+    max-width: none;
+  }
+}
+
+#menu2 .container-fluid {
+  padding: 0 10%;
+}
+#menu2 .social-list {
+  margin-left: 13px;
+}
+#menu2 .social-list li {
+  margin-right: 10px;
+}
+#menu2 .social-list a {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 100px;
+}
+#menu2 .social-list a i {
+  transform: translateY(2px);
+}
+.main-container .btn--primary {
+  padding: 1rem 3rem;
+}
+.main-container .btn--secundary {
+  margin: 20px 0 0 0;
+}
+.main-container .btn__text {
+  font-size: 20px;
+}
+
+/* Bar Setup */
+#bar-setup .feature {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+#bar-setup .feature img {
+  padding: 0 0;
+  margin: 0 0;
+}
+#bar-setup .feature-inner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 70%; /* Maintain aspect ratio */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+#bar-setup h4,
+#bar-setup p {
+  padding: 1.5rem 20px 1rem 20px;
+  margin: 0;
+}
+#bar-setup .feature-icon {
+  width: 20px;
+  height: 20px !important;
+  height: auto;
+  margin-right: 4px !important;
+}
+#bar-setup .feature:hover .feature-inner {
+  transform: rotateX(180deg);
+}
+
+#bar-setup .feature-inner .feature-front,
+#bar-setup .feature-inner .feature-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.feature-back img {
+  position: absolute;
+  z-index: -1;
+}
+#bar-setup .feature-inner .feature-back {
+  transform: rotateX(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#bar-setup .feature-inner .feature-back .feature-cta {
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 1rem 0px;
+  margin: 0 20px;
+  border-radius: none;
+  border-bottom: 1px solid #fff;
+}
+#bar-setup .feature-inner .feature-back .feature-cta:hover {
+  text-decoration: none;
+}
+#bar-setup .feature-details {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  padding: 1.5rem 20px !important;
+}
+
+/* Modal */
+/* Estilos para el modal */
+#openModal {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Posición fija */
+  z-index: 99; /* Se sitúa por encima de otros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Permite scroll si es necesario */
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
+  padding: 0 10%;
+}
+
+/* Contenido del modal */
+.modal-content {
+  background-color: #fff;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 1080px;
+}
+/* Botón de cierre */
+.close {
+  color: #dcbb55;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 1;
+  margin: 0 0 20px 0;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Nuevo estilo para bloquear el scroll */
+.modal-open {
+  overflow: hidden;
+}
