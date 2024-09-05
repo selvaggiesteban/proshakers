@@ -605,39 +605,6 @@
         <script src="js/scripts.js"></script>
         <script src="https://snapwidget.com/js/snapwidget.js"></script>
         <!-- WhatsApp Widget -->
-        <script> var url = 'https://widget.bot.space/js/widget.js'; var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url; var options = {"enabled":true,"chatButtonSetting":{"backgroundColor":"#13C656","ctaText":"Message Us","borderRadius":"25","marginLeft":"20","marginBottom":"20","marginRight":"20","position":"right"},"brandSetting":{"brandName":"Proshakers","brandSubTitle":"Typically replies within a day","brandImg":"https://www.proshakers.es/images/favicon-32x32.png","welcomeText":"Hi there! \nHow can I help you?","messageText":"Hello, I have a question.","backgroundColor":"#085E54","ctaText":"Start Chat","borderRadius":"25","autoShow":false,"phoneNumber":"34680263839"}}; s.onload = function() { CreateWhatsappChatWidget(options); }; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); </script>
-        <!-- Modal -->
-        <script>
-            // Obtener elementos del DOM
-            var modal = document.getElementById("myModal");
-            var btn = document.getElementById("openModal");
-            var span = document.getElementsByClassName("close")[0];
-    
-            // Función para abrir el modal
-            btn.onclick = function(event) {
-                event.preventDefault(); // Previene el comportamiento por defecto del enlace
-                modal.style.display = "block";
-                document.body.classList.add('modal-open'); // Añade la clase para bloquear el scroll
-            }
-    
-            // Función para cerrar el modal (con la 'x')
-            span.onclick = function() {
-                closeModal();
-            }
-    
-            // Función para cerrar el modal haciendo clic fuera de él
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    closeModal();
-                }
-            }
-    
-            // Función para cerrar el modal y restaurar el scroll
-            function closeModal() {
-                modal.style.display = "none";
-                document.body.classList.remove('modal-open'); // Remueve la clase para permitir el scroll
-            }
-        </script>
+        <script> var url = 'https://widget.bot.space/js/widget.js'; var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url; var options = {"enabled":true,"chatButtonSetting":{"backgroundColor":"#13C656","ctaText":"","borderRadius":"25","marginLeft":"20","marginBottom":"20","marginRight":"20","position":"right"},"brandSetting":{"brandName":"Proshakers","brandSubTitle":"Typically replies within a day","brandImg":"https://scontent.feze7-2.fna.fbcdn.net/v/t39.30808-6/244669569_1809294145922621_4797160912856639303_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGE8kBF0I5bR8sdrxd9VGSngcPQjjjgFH6Bw9COOOAUfuq_IyWStvyAtzV8GHWbogQ7_PiN6ujYKZ5hHCas3Ltz&_nc_ohc=IvHe9LRUdTYQ7kNvgHCDPRe&_nc_ht=scontent.feze7-2.fna&oh=00_AYD9jbQE1MGJ6SPcbsSBT6wlZ1wv9o9AjeIlJoqnIdpKhA&oe=66DF8A58","welcomeText":"Hi there! \nHow can I help you?","messageText":"Hello, I have a question.","backgroundColor":"#085E54","ctaText":"Start Chat","borderRadius":"25","autoShow":false,"phoneNumber":"34680263839"}}; s.onload = function() { CreateWhatsappChatWidget(options); }; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); </script>
     </body>
-
 </html>
